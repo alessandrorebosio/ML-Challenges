@@ -1,0 +1,27 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Visual Studio Code configuration folder
+.vscode/
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore solution file
+*.txt
+
+# Keep the shared datasets tracked
+!DBs/**/*.txt
+!requirements.txt
+
+# joblib caches of the experiments
+Experiments/
+
+# Jupyter
+.ipynb_checkpoints/
