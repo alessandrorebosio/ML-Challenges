@@ -4,7 +4,8 @@ Machine Learning exercises, organized in challenges that share a single dataset 
 
 - `01-kNN&SVM`: multiclass classification on PenDigits with a PCA-SVC pipeline;
 - `02-PetClassification`: cat vs dog image classification with HOG features and a multi-resolution SVC ensemble;
-- `03-Regression`: next-hour power forecasting for a photovoltaic plant with an ensemble of tree-based regressors.
+- `03-Regression`: next-hour power forecasting for a photovoltaic plant with an ensemble of tree-based regressors;
+- `04-Clustering`: speaker recognition from MFCCs with one Gaussian Mixture Model per speaker.
 
 ## Structure
 
@@ -13,7 +14,8 @@ ML-Challenges/
 ├── DBs/                      # datasets shared by all challenges
 │   ├── PenDigits/            # 01-kNN&SVM
 │   ├── CaniGatti_ML18/       # 02-PetClassification
-│   └── SolarPark/            # 03-Regression
+│   ├── SolarPark/            # 03-Regression
+│   └── AudioDigits_ML26_27/  # 04-Clustering
 ├── NN-Name/                  # one folder per challenge
 │   ├── README.md             # task description and constraints
 │   ├── src/
@@ -70,6 +72,7 @@ Paths are relative to the notebook's `src/` folder, which is the default working
 | `01-kNN&SVM` | `Es3Predictions.txt` |
 | `02-PetClassification` | `Es4Predictions.txt` |
 | `03-Regression` | `Es5Predictions.txt` |
+| `04-Clustering` | `Es6Predictions.txt` |
 
 All notebooks share the same structure: `Setup` (imports and configuration), `Helper Functions`, `Data Loading`, `Model`, `Model Evaluation` (cross-validation) and `Prediction and Export`.
 
