@@ -7,8 +7,7 @@
    - hyperparameter optimization of the classifiers;
    - optimization of the HOG extraction parameters;
    - combinations of multiple classifiers.
-2. **Target**: Accuracy $\ge 75\%$ on the test set (threshold to obtain 2 points in the ranking).
-3. **Suggestion**: Proceed iteratively, starting from a limited set of combinations and then refining the search: `cross_val_score(...)` and `GridSearchCV(...)` can become prohibitively slow with many hyperparameter combinations and folds.
+2. **Suggestion**: Proceed iteratively, starting from a limited set of combinations and then refining the search: `cross_val_score(...)` and `GridSearchCV(...)` can become prohibitively slow with many hyperparameter combinations and folds.
 
 ## Rules & Constraints
 - **Allowed Models**: Any classifier, **except** those based on neural networks or transformers.

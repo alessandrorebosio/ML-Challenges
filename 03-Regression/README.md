@@ -8,8 +8,7 @@
    - cyclical encoding of date features (hour of day, day of year, month), see [Cyclical features encoding](https://towardsdatascience.com/cyclical-features-encoding-its-about-time-ce23581845ca);
    - combinations of two or more regressors (ensembles);
    - cleaning of anomalous data.
-2. **Target**: RMSE $\le 75$ on the test set (threshold to obtain 2 points in the ranking).
-3. **Suggestion**: Evaluate choices with *Cross-Validation*, preferably with folds made of **ordered temporal periods** (e.g. `TimeSeriesSplit` or contiguous blocks) rather than random patterns, to avoid optimistic estimates caused by temporally adjacent samples. If you skip Cross-Validation, split the original dataset into a training set and a validation set.
+2. **Suggestion**: Evaluate choices with *Cross-Validation*, preferably with folds made of **ordered temporal periods** (e.g. `TimeSeriesSplit` or contiguous blocks) rather than random patterns, to avoid optimistic estimates caused by temporally adjacent samples. If you skip Cross-Validation, split the original dataset into a training set and a validation set.
 
 ## Scoring with RMSE in scikit-learn
 

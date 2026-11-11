@@ -7,8 +7,7 @@
    - hyperparameters of the GMMs (number of components $s$, covariance type, etc.), possibly different for each speaker;
    - other clustering techniques available in scikit-learn;
    - cleaning of anomalous data.
-2. **Target**: Accuracy $\ge 65\%$ on the test set (threshold to obtain 2 points in the ranking).
-3. **Suggestion**: The validation set must simulate the test conditions, i.e. unseen tracks recorded in different conditions. Split **by track, not by frame** (frames of the same track overlap and are almost identical), ideally **by session**: e.g. train on session 1 and validate on session 4. Once the configuration is chosen, retrain the GMMs on all training tracks (sessions 1 and 4) and apply the same preprocessing to the test set.
+2. **Suggestion**: The validation set must simulate the test conditions, i.e. unseen tracks recorded in different conditions. Split **by track, not by frame** (frames of the same track overlap and are almost identical), ideally **by session**: e.g. train on session 1 and validate on session 4. Once the configuration is chosen, retrain the GMMs on all training tracks (sessions 1 and 4) and apply the same preprocessing to the test set.
 
 ## Rules & Constraints
 - **Allowed Models**: Any clustering technique available in scikit-learn, including Gaussian Mixture Models.
