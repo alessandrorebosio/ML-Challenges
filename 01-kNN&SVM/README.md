@@ -3,7 +3,6 @@
 ## Instructions
 
 1. **Task**: Train a multiclass classifier (`0`-`9`) on `DBs/PenDigits/pendigits_tr.txt` and predict the unlabeled samples in `DBs/PenDigits/pendigits_te.txt`.
-2. **Target**: Accuracy $\ge 85\%$ on the test set.
 
 ## Rules & Constraints
 - **Allowed Models**: Only `sklearn.neighbors.KNeighborsClassifier` or `sklearn.svm.SVC`.
